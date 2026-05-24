@@ -14,10 +14,11 @@ val_data              -> last 20% of data, used for validation
 x                     -> input sequences (context)
 y                     -> target sequences (what comes next after x)
 token_embedding_table -> shows the probability of which character comes next for each character (80 x 80)
+max_new_tokens        -> no. of characters to generate  
 
 *Logits*
-B                     -> Block Size  
-T                     -> Time Dimension (Batch Size)
+B                     -> Batch Size  
+T                     -> Time Dimension (Block Size)
 C                     -> Vocab Size
 
 ## FUNCTIONS
@@ -28,7 +29,7 @@ encode()       -> converts a string into a list of numbers
 decode()       -> converts a list of numbers back into characters
 get_batch()    -> picks random chunks from train/val data and returns input-target pairs
 forward_pass() -> defines how input data moves through your neural network to produce an output
-generate()     -> generates the tokens
+generate()     -> generates the tokens (next character to come)
 
 ## CLASS
 
