@@ -16,7 +16,8 @@
 - token_embedding_table   -> shows the probability of which character comes next for each character(80x80)
 - max_new_tokens          -> no. of characters to generate  
 
-- *Logits*
+### Logits
+
 - B                       -> Batch Size  
 - T                       -> Time Dimension (Block Size)
 - C                       -> Vocab Size
