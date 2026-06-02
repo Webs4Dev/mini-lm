@@ -39,4 +39,6 @@
 ## CLASS
 
 - bigramlanguagemodel()   -> neural network that predicts the next character based on the current one
-- gptlanguagemodel()      -> neural network that predicts the next character based on context of characters before it  
+- gptlanguagemodel()      -> neural network that predicts the next character based on context of all characters before it  
+- block()                 -> transformer layer that combines self-attention, feed-forward processing, normalization, and residual connections to learn contextual token representations
+- feedforward()           -> position-wise neural network that enriches token representations after self-attention  
