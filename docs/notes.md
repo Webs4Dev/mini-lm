@@ -17,6 +17,8 @@
 - max_new_tokens          -> no. of characters to generate  
 - n_embd                  -> no. of embeddings per token
 - n_layers                -> no. of decoders  
+- n_head                  -> no. of heads
+- head_size               -> n_embd//n_head
 
 ### Logits
 
@@ -31,7 +33,7 @@
 - encode()          -> converts a string into a list of numbers
 - decode()          -> converts a list of numbers back into characters
 - get_batch()       -> picks random chunks from train/val data and returns input -target pairs
-- forward_pass()    -> defines how input data moves through your neural network to produce an output
+- forward()         -> defines how input data moves through your neural network to produce an output
 - generate()        -> generates the tokens (next character to come)
 - estimate_loss()   -> to get loss at different iterations
 - __init__weights() -> initializes weights which helps training converge better  
@@ -41,4 +43,6 @@
 - bigramlanguagemodel()   -> neural network that predicts the next character based on the current one
 - gptlanguagemodel()      -> neural network that predicts the next character based on context of all characters before it  
 - block()                 -> transformer layer that combines self-attention, feed-forward processing, normalization, and residual connections to learn contextual token representations
+- multiheadattention()    -> allows the model to focus on different parts of the input simultaneously and merge the learned information
 - feedforward()           -> position-wise neural network that enriches token representations after self-attention  
+- head()                  -> gains the insights/info from the characters
