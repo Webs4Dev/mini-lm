@@ -52,12 +52,12 @@ print(generated_chars)
 
 ## Sample Output
 
-``
+```text
 boo; "but wurt troad.
 
 Doothy, ans wern of nind to seawi n tely eata tear abain,
 andly etreple--onath meaned,e, so in thly,eee nive goable st dame...
-``
+```
 
 ## References
 
